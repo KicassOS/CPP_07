@@ -6,7 +6,7 @@
 /*   By: pszleper <pszleper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 14:04:20 by pszleper          #+#    #+#             */
-/*   Updated: 2023/10/25 17:38:56 by pszleper         ###   ########.fr       */
+/*   Updated: 2023/10/26 02:01:18 by pszleper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class Array
 		~Array(void);
 
 		T&				operator[](unsigned int index);
-		T				operator[](unsigned int index) const;
+		const T&		operator[](unsigned int index) const;
 		unsigned int	size(void) const;
 
 		class OutOfBounds : public std::exception

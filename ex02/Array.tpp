@@ -6,7 +6,7 @@
 /*   By: pszleper <pszleper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 14:04:28 by pszleper          #+#    #+#             */
-/*   Updated: 2023/10/25 17:38:52 by pszleper         ###   ########.fr       */
+/*   Updated: 2023/10/26 02:01:06 by pszleper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ T&	Array<T>::operator[](unsigned int index)
 }
 
 template <typename T>
-T	Array<T>::operator[](unsigned int index) const
+const T&	Array<T>::operator[](unsigned int index) const
 {
 	if (index >= _elementNum)
 		throw OutOfBounds();

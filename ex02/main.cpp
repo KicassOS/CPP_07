@@ -6,7 +6,7 @@
 /*   By: pszleper <pszleper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 14:04:12 by pszleper          #+#    #+#             */
-/*   Updated: 2023/10/25 17:49:17 by pszleper         ###   ########.fr       */
+/*   Updated: 2023/10/26 02:02:17 by pszleper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,7 +100,7 @@ int main(void)
 
 
 	std::cout << "Testing const" << std::endl;
-	Array<int> const_test(3);
+	const Array<int> const_test(3);
 
 	std::cout << const_test[1] << std::endl;
 	// const_test[1] = 1337;
